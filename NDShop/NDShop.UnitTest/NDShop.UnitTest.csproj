@@ -98,6 +98,28 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDShop.Common\NDShop.Common.csproj">
+      <Project>{56169c0f-69b8-4aa8-a6ce-9bfcbd9ab61c}</Project>
+      <Name>NDShop.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDShop.Data\NDShop.Data.csproj">
+      <Project>{93b38fa8-433c-4a00-919a-da2a718ea7b1}</Project>
+      <Name>NDShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDShop.Model\NDShop.Model.csproj">
+      <Project>{62c4e801-71a8-4737-aacf-4ebbfa06ad57}</Project>
+      <Name>NDShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDShop.Service\NDShop.Service.csproj">
+      <Project>{480c978b-3fd1-4eb5-a13f-0febfa35e8e9}</Project>
+      <Name>NDShop.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDShop.Web\NDShop.Web.csproj">
+      <Project>{C812C872-2BFE-4518-A639-7F1F0F470C0E}</Project>
+      <Name>NDShop.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
